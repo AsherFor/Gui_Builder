@@ -81,10 +81,16 @@ Checkbutton(master, command = check_box_function, text='Brown Eyes', variable=Ch
 
 
 #One Drop Down Menu
-top_value = StringVar(master)
-top_value.set("Menu")
-drop_down_menu = OptionMenu(master, top_value, "Help", "About Me", "Link to Library")
+drop_down_menu = Menubutton(master, text="Drop Down Menu", bg="red", fg="blue2", highlightbackground="red", activebackground="dark green")
 drop_down_menu.grid(row = 0, column = 6)
+drop_down_menu.menu = Menu(drop_down_menu, tearoff=0)
+drop_down_menu["menu"] = drop_down_menu.menu
+Var1 = IntVar()
+Var2 = IntVar()
+Var3 = IntVar
+drop_down_menu.menu.add_checkbutton(label='Help', variable=Var1)
+drop_down_menu.menu.add_checkbutton(label='About', variable=Var2)
+drop_down_menu.menu.add_checkbutton(label='Info About Tkinter', variable=Var3)
 
 
 #One Pop Up Window
