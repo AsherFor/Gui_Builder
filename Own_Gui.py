@@ -23,7 +23,7 @@ def check_box_function():
 def pop_up_window():
     new_window = Toplevel()
     new_window.title('Button Activated Pop Up Window')
-    new_window.configure(background = "deep sky blue")
+    new_window.configure(background = "blue")
 
 
 #Four Buttons
