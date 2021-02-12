@@ -26,20 +26,20 @@ def pop_up_window():
     new_window.configure(background = "deep sky blue")
 
 
-#Four Buttons DONE
+#Four Buttons
 Button1 = Button(master, text = "Click", command = button_function, bg="gray20", fg="lime green", highlightbackground="gray20", activebackground="deep sky blue")
 Button1.grid(row = 0, column = 4)
 
-Button2 = Button(master, text = "These", command = button_function, bg="gray20", fg="lime green", highlightbackground="gray20", activebackground="deep sky blue")
+Button2 = Button(master, text = "These", command = button_function, bg="red", fg="blue2", highlightbackground="red", activebackground="dark green")
 Button2.grid(row = 1, column = 4)
 
-Button3 = Button(master, text = "Cool", command = button_function, bg="gray20", fg="lime green", highlightbackground="gray20", activebackground="deep sky blue")
+Button3 = Button(master, text = "Cool", command = button_function, bg="snow3", fg="ivory3", highlightbackground="cyan", activebackground="violet")
 Button3.grid(row = 2, column = 4)
 
-Button4 = Button(master, text = "Buttons", command = button_function, bg="gray20", fg="lime green", highlightbackground="gray20", activebackground="deep sky blue")
+Button4 = Button(master, text = "Buttons", command = button_function, bg="seashell4", fg="SeaGreen4", highlightbackground="dodger blue", activebackground="gold")
 Button4.grid(row = 3, column = 4)
 
-#Two Sliders   DONE
+#Two Sliders
 Vertical_slider = Scale(master, from_= 0, to=100, bg="gray20", fg="lime green", highlightbackground="gray20", activebackground="deep sky blue")
 Vertical_slider.grid()
 
@@ -83,7 +83,7 @@ Checkbutton(master, command = check_box_function, text='Brown Eyes', variable=Ch
 #One Drop Down Menu
 top_value = StringVar(master)
 top_value.set("Menu")
-drop_down_menu = OptionMenu(master, top_value, "Help", "About Me", "Link to GUI")
+drop_down_menu = OptionMenu(master, top_value, "Help", "About Me", "Link to Library")
 drop_down_menu.grid(row = 0, column = 6)
 
 
@@ -93,7 +93,7 @@ pop_up.title('Pop Up Window')
 pop_up.configure(background = "deep sky blue")
 
     #Button that creates pop up window
-Button_window = Button(master, text = "Click for Pop Up Window", command = pop_up_window)
+Button_window = Button(master, text = "Click for Pop Up Window", command = pop_up_window, bg="gray20", fg="lime green", highlightbackground="gray20", activebackground="deep sky blue")
 Button_window.grid(row = 5, column = 4)
 
 
